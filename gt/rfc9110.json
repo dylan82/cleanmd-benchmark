@@ -1,0 +1,1178 @@
+{
+ "sections": [
+  {
+   "num": "1",
+   "title": "Introduction"
+  },
+  {
+   "num": "1.1",
+   "title": "Purpose"
+  },
+  {
+   "num": "1.2",
+   "title": "History and Evolution"
+  },
+  {
+   "num": "1.3",
+   "title": "Core Semantics"
+  },
+  {
+   "num": "1.4",
+   "title": "Specifications Obsoleted by This Document"
+  },
+  {
+   "num": "2",
+   "title": "Conformance"
+  },
+  {
+   "num": "2.1",
+   "title": "Syntax Notation"
+  },
+  {
+   "num": "2.2",
+   "title": "Requirements Notation"
+  },
+  {
+   "num": "2.3",
+   "title": "Length Requirements"
+  },
+  {
+   "num": "2.4",
+   "title": "Error Handling"
+  },
+  {
+   "num": "2.5",
+   "title": "Protocol Version"
+  },
+  {
+   "num": "3",
+   "title": "Terminology and Core Concepts"
+  },
+  {
+   "num": "3.1",
+   "title": "Resources"
+  },
+  {
+   "num": "3.2",
+   "title": "Representations"
+  },
+  {
+   "num": "3.3",
+   "title": "Connections, Clients, and Servers"
+  },
+  {
+   "num": "3.4",
+   "title": "Messages"
+  },
+  {
+   "num": "3.5",
+   "title": "User Agents"
+  },
+  {
+   "num": "3.6",
+   "title": "Origin Server"
+  },
+  {
+   "num": "3.7",
+   "title": "Intermediaries"
+  },
+  {
+   "num": "3.8",
+   "title": "Caches"
+  },
+  {
+   "num": "3.9",
+   "title": "Example Message Exchange"
+  },
+  {
+   "num": "4",
+   "title": "Identifiers in HTTP"
+  },
+  {
+   "num": "4.1",
+   "title": "URI References"
+  },
+  {
+   "num": "4.2",
+   "title": "HTTP-Related URI Schemes"
+  },
+  {
+   "num": "4.2.1",
+   "title": "http URI Scheme"
+  },
+  {
+   "num": "4.2.2",
+   "title": "https URI Scheme"
+  },
+  {
+   "num": "4.2.3",
+   "title": "http(s) Normalization and Comparison"
+  },
+  {
+   "num": "4.2.4",
+   "title": "Deprecation of userinfo in http(s) URIs"
+  },
+  {
+   "num": "4.2.5",
+   "title": "http(s) References with Fragment Identifiers"
+  },
+  {
+   "num": "4.3",
+   "title": "Authoritative Access"
+  },
+  {
+   "num": "4.3.1",
+   "title": "URI Origin"
+  },
+  {
+   "num": "4.3.2",
+   "title": "http Origins"
+  },
+  {
+   "num": "4.3.3",
+   "title": "https Origins"
+  },
+  {
+   "num": "4.3.4",
+   "title": "https Certificate Verification"
+  },
+  {
+   "num": "4.3.5",
+   "title": "IP-ID Reference Identity"
+  },
+  {
+   "num": "5",
+   "title": "Fields"
+  },
+  {
+   "num": "5.1",
+   "title": "Field Names"
+  },
+  {
+   "num": "5.2",
+   "title": "Field Lines and Combined Field Value"
+  },
+  {
+   "num": "5.3",
+   "title": "Field Order"
+  },
+  {
+   "num": "5.4",
+   "title": "Field Limits"
+  },
+  {
+   "num": "5.5",
+   "title": "Field Values"
+  },
+  {
+   "num": "5.6",
+   "title": "Common Rules for Defining Field Values"
+  },
+  {
+   "num": "5.6.1",
+   "title": "Lists (#rule ABNF Extension)"
+  },
+  {
+   "num": "5.6.1.1",
+   "title": "Sender Requirements"
+  },
+  {
+   "num": "5.6.1.2",
+   "title": "Recipient Requirements"
+  },
+  {
+   "num": "5.6.2",
+   "title": "Tokens"
+  },
+  {
+   "num": "5.6.3",
+   "title": "Whitespace"
+  },
+  {
+   "num": "5.6.4",
+   "title": "Quoted Strings"
+  },
+  {
+   "num": "5.6.5",
+   "title": "Comments"
+  },
+  {
+   "num": "5.6.6",
+   "title": "Parameters"
+  },
+  {
+   "num": "5.6.7",
+   "title": "Date/Time Formats"
+  },
+  {
+   "num": "6",
+   "title": "Message Abstraction"
+  },
+  {
+   "num": "6.1",
+   "title": "Framing and Completeness"
+  },
+  {
+   "num": "6.2",
+   "title": "Control Data"
+  },
+  {
+   "num": "6.3",
+   "title": "Header Fields"
+  },
+  {
+   "num": "6.4",
+   "title": "Content"
+  },
+  {
+   "num": "6.4.1",
+   "title": "Content Semantics"
+  },
+  {
+   "num": "6.4.2",
+   "title": "Identifying Content"
+  },
+  {
+   "num": "6.5",
+   "title": "Trailer Fields"
+  },
+  {
+   "num": "6.5.1",
+   "title": "Limitations on Use of Trailers"
+  },
+  {
+   "num": "6.5.2",
+   "title": "Processing Trailer Fields"
+  },
+  {
+   "num": "6.6",
+   "title": "Message Metadata"
+  },
+  {
+   "num": "6.6.1",
+   "title": "Date"
+  },
+  {
+   "num": "6.6.2",
+   "title": "Trailer"
+  },
+  {
+   "num": "7",
+   "title": "Routing HTTP Messages"
+  },
+  {
+   "num": "7.1",
+   "title": "Determining the Target Resource"
+  },
+  {
+   "num": "7.2",
+   "title": "Host and :authority"
+  },
+  {
+   "num": "7.3",
+   "title": "Routing Inbound Requests"
+  },
+  {
+   "num": "7.3.1",
+   "title": "To a Cache"
+  },
+  {
+   "num": "7.3.2",
+   "title": "To a Proxy"
+  },
+  {
+   "num": "7.3.3",
+   "title": "To the Origin"
+  },
+  {
+   "num": "7.4",
+   "title": "Rejecting Misdirected Requests"
+  },
+  {
+   "num": "7.5",
+   "title": "Response Correlation"
+  },
+  {
+   "num": "7.6",
+   "title": "Message Forwarding"
+  },
+  {
+   "num": "7.6.1",
+   "title": "Connection"
+  },
+  {
+   "num": "7.6.2",
+   "title": "Max-Forwards"
+  },
+  {
+   "num": "7.6.3",
+   "title": "Via"
+  },
+  {
+   "num": "7.7",
+   "title": "Message Transformations"
+  },
+  {
+   "num": "7.8",
+   "title": "Upgrade"
+  },
+  {
+   "num": "8",
+   "title": "Representation Data and Metadata"
+  },
+  {
+   "num": "8.1",
+   "title": "Representation Data"
+  },
+  {
+   "num": "8.2",
+   "title": "Representation Metadata"
+  },
+  {
+   "num": "8.3",
+   "title": "Content-Type"
+  },
+  {
+   "num": "8.3.1",
+   "title": "Media Type"
+  },
+  {
+   "num": "8.3.2",
+   "title": "Charset"
+  },
+  {
+   "num": "8.3.3",
+   "title": "Multipart Types"
+  },
+  {
+   "num": "8.4",
+   "title": "Content-Encoding"
+  },
+  {
+   "num": "8.4.1",
+   "title": "Content Codings"
+  },
+  {
+   "num": "8.4.1.1",
+   "title": "Compress Coding"
+  },
+  {
+   "num": "8.4.1.2",
+   "title": "Deflate Coding"
+  },
+  {
+   "num": "8.4.1.3",
+   "title": "Gzip Coding"
+  },
+  {
+   "num": "8.5",
+   "title": "Content-Language"
+  },
+  {
+   "num": "8.5.1",
+   "title": "Language Tags"
+  },
+  {
+   "num": "8.6",
+   "title": "Content-Length"
+  },
+  {
+   "num": "8.7",
+   "title": "Content-Location"
+  },
+  {
+   "num": "8.8",
+   "title": "Validator Fields"
+  },
+  {
+   "num": "8.8.1",
+   "title": "Weak versus Strong"
+  },
+  {
+   "num": "8.8.2",
+   "title": "Last-Modified"
+  },
+  {
+   "num": "8.8.2.1",
+   "title": "Generation"
+  },
+  {
+   "num": "8.8.2.2",
+   "title": "Comparison"
+  },
+  {
+   "num": "8.8.3",
+   "title": "ETag"
+  },
+  {
+   "num": "8.8.3.1",
+   "title": "Generation"
+  },
+  {
+   "num": "8.8.3.2",
+   "title": "Comparison"
+  },
+  {
+   "num": "8.8.3.3",
+   "title": "Example: Entity Tags Varying on Content-Negotiated"
+  },
+  {
+   "num": "9",
+   "title": "Methods"
+  },
+  {
+   "num": "9.1",
+   "title": "Overview"
+  },
+  {
+   "num": "9.2",
+   "title": "Common Method Properties"
+  },
+  {
+   "num": "9.2.1",
+   "title": "Safe Methods"
+  },
+  {
+   "num": "9.2.2",
+   "title": "Idempotent Methods"
+  },
+  {
+   "num": "9.2.3",
+   "title": "Methods and Caching"
+  },
+  {
+   "num": "9.3",
+   "title": "Method Definitions"
+  },
+  {
+   "num": "9.3.1",
+   "title": "GET"
+  },
+  {
+   "num": "9.3.2",
+   "title": "HEAD"
+  },
+  {
+   "num": "9.3.3",
+   "title": "POST"
+  },
+  {
+   "num": "9.3.4",
+   "title": "PUT"
+  },
+  {
+   "num": "9.3.5",
+   "title": "DELETE"
+  },
+  {
+   "num": "9.3.6",
+   "title": "CONNECT"
+  },
+  {
+   "num": "9.3.7",
+   "title": "OPTIONS"
+  },
+  {
+   "num": "9.3.8",
+   "title": "TRACE"
+  },
+  {
+   "num": "10",
+   "title": "Message Context"
+  },
+  {
+   "num": "10.1",
+   "title": "Request Context Fields"
+  },
+  {
+   "num": "10.1.1",
+   "title": "Expect"
+  },
+  {
+   "num": "10.1.2",
+   "title": "From"
+  },
+  {
+   "num": "10.1.3",
+   "title": "Referer"
+  },
+  {
+   "num": "10.1.4",
+   "title": "TE"
+  },
+  {
+   "num": "10.1.5",
+   "title": "User-Agent"
+  },
+  {
+   "num": "10.2",
+   "title": "Response Context Fields"
+  },
+  {
+   "num": "10.2.1",
+   "title": "Allow"
+  },
+  {
+   "num": "10.2.2",
+   "title": "Location"
+  },
+  {
+   "num": "10.2.3",
+   "title": "Retry-After"
+  },
+  {
+   "num": "10.2.4",
+   "title": "Server"
+  },
+  {
+   "num": "11",
+   "title": "HTTP Authentication"
+  },
+  {
+   "num": "11.1",
+   "title": "Authentication Scheme"
+  },
+  {
+   "num": "11.2",
+   "title": "Authentication Parameters"
+  },
+  {
+   "num": "11.3",
+   "title": "Challenge and Response"
+  },
+  {
+   "num": "11.4",
+   "title": "Credentials"
+  },
+  {
+   "num": "11.5",
+   "title": "Establishing a Protection Space (Realm)"
+  },
+  {
+   "num": "11.6",
+   "title": "Authenticating Users to Origin Servers"
+  },
+  {
+   "num": "11.6.1",
+   "title": "WWW-Authenticate"
+  },
+  {
+   "num": "11.6.2",
+   "title": "Authorization"
+  },
+  {
+   "num": "11.6.3",
+   "title": "Authentication-Info"
+  },
+  {
+   "num": "11.7",
+   "title": "Authenticating Clients to Proxies"
+  },
+  {
+   "num": "11.7.1",
+   "title": "Proxy-Authenticate"
+  },
+  {
+   "num": "11.7.2",
+   "title": "Proxy-Authorization"
+  },
+  {
+   "num": "11.7.3",
+   "title": "Proxy-Authentication-Info"
+  },
+  {
+   "num": "12",
+   "title": "Content Negotiation"
+  },
+  {
+   "num": "12.1",
+   "title": "Proactive Negotiation"
+  },
+  {
+   "num": "12.2",
+   "title": "Reactive Negotiation"
+  },
+  {
+   "num": "12.3",
+   "title": "Request Content Negotiation"
+  },
+  {
+   "num": "12.4",
+   "title": "Content Negotiation Field Features"
+  },
+  {
+   "num": "12.4.1",
+   "title": "Absence"
+  },
+  {
+   "num": "12.4.2",
+   "title": "Quality Values"
+  },
+  {
+   "num": "12.4.3",
+   "title": "Wildcard Values"
+  },
+  {
+   "num": "12.5",
+   "title": "Content Negotiation Fields"
+  },
+  {
+   "num": "12.5.1",
+   "title": "Accept"
+  },
+  {
+   "num": "12.5.2",
+   "title": "Accept-Charset"
+  },
+  {
+   "num": "12.5.3",
+   "title": "Accept-Encoding"
+  },
+  {
+   "num": "12.5.4",
+   "title": "Accept-Language"
+  },
+  {
+   "num": "12.5.5",
+   "title": "Vary"
+  },
+  {
+   "num": "13",
+   "title": "Conditional Requests"
+  },
+  {
+   "num": "13.1",
+   "title": "Preconditions"
+  },
+  {
+   "num": "13.1.1",
+   "title": "If-Match"
+  },
+  {
+   "num": "13.1.2",
+   "title": "If-None-Match"
+  },
+  {
+   "num": "13.1.3",
+   "title": "If-Modified-Since"
+  },
+  {
+   "num": "13.1.4",
+   "title": "If-Unmodified-Since"
+  },
+  {
+   "num": "13.1.5",
+   "title": "If-Range"
+  },
+  {
+   "num": "13.2",
+   "title": "Evaluation of Preconditions"
+  },
+  {
+   "num": "13.2.1",
+   "title": "When to Evaluate"
+  },
+  {
+   "num": "13.2.2",
+   "title": "Precedence of Preconditions"
+  },
+  {
+   "num": "14",
+   "title": "Range Requests"
+  },
+  {
+   "num": "14.1",
+   "title": "Range Units"
+  },
+  {
+   "num": "14.1.1",
+   "title": "Range Specifiers"
+  },
+  {
+   "num": "14.1.2",
+   "title": "Byte Ranges"
+  },
+  {
+   "num": "14.2",
+   "title": "Range"
+  },
+  {
+   "num": "14.3",
+   "title": "Accept-Ranges"
+  },
+  {
+   "num": "14.4",
+   "title": "Content-Range"
+  },
+  {
+   "num": "14.5",
+   "title": "Partial PUT"
+  },
+  {
+   "num": "14.6",
+   "title": "Media Type multipart/byteranges"
+  },
+  {
+   "num": "15",
+   "title": "Status Codes"
+  },
+  {
+   "num": "15.1",
+   "title": "Overview of Status Codes"
+  },
+  {
+   "num": "15.2",
+   "title": "Informational 1xx"
+  },
+  {
+   "num": "15.2.1",
+   "title": "100 Continue"
+  },
+  {
+   "num": "15.2.2",
+   "title": "101 Switching Protocols"
+  },
+  {
+   "num": "15.3",
+   "title": "Successful 2xx"
+  },
+  {
+   "num": "15.3.1",
+   "title": "200 OK"
+  },
+  {
+   "num": "15.3.2",
+   "title": "201 Created"
+  },
+  {
+   "num": "15.3.3",
+   "title": "202 Accepted"
+  },
+  {
+   "num": "15.3.4",
+   "title": "203 Non-Authoritative Information"
+  },
+  {
+   "num": "15.3.5",
+   "title": "204 No Content"
+  },
+  {
+   "num": "15.3.6",
+   "title": "205 Reset Content"
+  },
+  {
+   "num": "15.3.7",
+   "title": "206 Partial Content"
+  },
+  {
+   "num": "15.3.7.1",
+   "title": "Single Part"
+  },
+  {
+   "num": "15.3.7.2",
+   "title": "Multiple Parts"
+  },
+  {
+   "num": "15.3.7.3",
+   "title": "Combining Parts"
+  },
+  {
+   "num": "15.4",
+   "title": "Redirection 3xx"
+  },
+  {
+   "num": "15.4.1",
+   "title": "300 Multiple Choices"
+  },
+  {
+   "num": "15.4.2",
+   "title": "301 Moved Permanently"
+  },
+  {
+   "num": "15.4.3",
+   "title": "302 Found"
+  },
+  {
+   "num": "15.4.4",
+   "title": "303 See Other"
+  },
+  {
+   "num": "15.4.5",
+   "title": "304 Not Modified"
+  },
+  {
+   "num": "15.4.6",
+   "title": "305 Use Proxy"
+  },
+  {
+   "num": "15.4.7",
+   "title": "306 (Unused)"
+  },
+  {
+   "num": "15.4.8",
+   "title": "307 Temporary Redirect"
+  },
+  {
+   "num": "15.4.9",
+   "title": "308 Permanent Redirect"
+  },
+  {
+   "num": "15.5",
+   "title": "Client Error 4xx"
+  },
+  {
+   "num": "15.5.1",
+   "title": "400 Bad Request"
+  },
+  {
+   "num": "15.5.2",
+   "title": "401 Unauthorized"
+  },
+  {
+   "num": "15.5.3",
+   "title": "402 Payment Required"
+  },
+  {
+   "num": "15.5.4",
+   "title": "403 Forbidden"
+  },
+  {
+   "num": "15.5.5",
+   "title": "404 Not Found"
+  },
+  {
+   "num": "15.5.6",
+   "title": "405 Method Not Allowed"
+  },
+  {
+   "num": "15.5.7",
+   "title": "406 Not Acceptable"
+  },
+  {
+   "num": "15.5.8",
+   "title": "407 Proxy Authentication Required"
+  },
+  {
+   "num": "15.5.9",
+   "title": "408 Request Timeout"
+  },
+  {
+   "num": "15.5.10",
+   "title": "409 Conflict"
+  },
+  {
+   "num": "15.5.11",
+   "title": "410 Gone"
+  },
+  {
+   "num": "15.5.12",
+   "title": "411 Length Required"
+  },
+  {
+   "num": "15.5.13",
+   "title": "412 Precondition Failed"
+  },
+  {
+   "num": "15.5.14",
+   "title": "413 Content Too Large"
+  },
+  {
+   "num": "15.5.15",
+   "title": "414 URI Too Long"
+  },
+  {
+   "num": "15.5.16",
+   "title": "415 Unsupported Media Type"
+  },
+  {
+   "num": "15.5.17",
+   "title": "416 Range Not Satisfiable"
+  },
+  {
+   "num": "15.5.18",
+   "title": "417 Expectation Failed"
+  },
+  {
+   "num": "15.5.19",
+   "title": "418 (Unused)"
+  },
+  {
+   "num": "15.5.20",
+   "title": "421 Misdirected Request"
+  },
+  {
+   "num": "15.5.21",
+   "title": "422 Unprocessable Content"
+  },
+  {
+   "num": "15.5.22",
+   "title": "426 Upgrade Required"
+  },
+  {
+   "num": "15.6",
+   "title": "Server Error 5xx"
+  },
+  {
+   "num": "15.6.1",
+   "title": "500 Internal Server Error"
+  },
+  {
+   "num": "15.6.2",
+   "title": "501 Not Implemented"
+  },
+  {
+   "num": "15.6.3",
+   "title": "502 Bad Gateway"
+  },
+  {
+   "num": "15.6.4",
+   "title": "503 Service Unavailable"
+  },
+  {
+   "num": "15.6.5",
+   "title": "504 Gateway Timeout"
+  },
+  {
+   "num": "15.6.6",
+   "title": "505 HTTP Version Not Supported"
+  },
+  {
+   "num": "16",
+   "title": "Extending HTTP"
+  },
+  {
+   "num": "16.1",
+   "title": "Method Extensibility"
+  },
+  {
+   "num": "16.1.1",
+   "title": "Method Registry"
+  },
+  {
+   "num": "16.1.2",
+   "title": "Considerations for New Methods"
+  },
+  {
+   "num": "16.2",
+   "title": "Status Code Extensibility"
+  },
+  {
+   "num": "16.2.1",
+   "title": "Status Code Registry"
+  },
+  {
+   "num": "16.2.2",
+   "title": "Considerations for New Status Codes"
+  },
+  {
+   "num": "16.3",
+   "title": "Field Extensibility"
+  },
+  {
+   "num": "16.3.1",
+   "title": "Field Name Registry"
+  },
+  {
+   "num": "16.3.2",
+   "title": "Considerations for New Fields"
+  },
+  {
+   "num": "16.3.2.1",
+   "title": "Considerations for New Field Names"
+  },
+  {
+   "num": "16.3.2.2",
+   "title": "Considerations for New Field Values"
+  },
+  {
+   "num": "16.4",
+   "title": "Authentication Scheme Extensibility"
+  },
+  {
+   "num": "16.4.1",
+   "title": "Authentication Scheme Registry"
+  },
+  {
+   "num": "16.4.2",
+   "title": "Considerations for New Authentication Schemes"
+  },
+  {
+   "num": "16.5",
+   "title": "Range Unit Extensibility"
+  },
+  {
+   "num": "16.5.1",
+   "title": "Range Unit Registry"
+  },
+  {
+   "num": "16.5.2",
+   "title": "Considerations for New Range Units"
+  },
+  {
+   "num": "16.6",
+   "title": "Content Coding Extensibility"
+  },
+  {
+   "num": "16.6.1",
+   "title": "Content Coding Registry"
+  },
+  {
+   "num": "16.6.2",
+   "title": "Considerations for New Content Codings"
+  },
+  {
+   "num": "16.7",
+   "title": "Upgrade Token Registry"
+  },
+  {
+   "num": "17",
+   "title": "Security Considerations"
+  },
+  {
+   "num": "17.1",
+   "title": "Establishing Authority"
+  },
+  {
+   "num": "17.2",
+   "title": "Risks of Intermediaries"
+  },
+  {
+   "num": "17.3",
+   "title": "Attacks Based on File and Path Names"
+  },
+  {
+   "num": "17.4",
+   "title": "Attacks Based on Command, Code, or Query Injection"
+  },
+  {
+   "num": "17.5",
+   "title": "Attacks via Protocol Element Length"
+  },
+  {
+   "num": "17.6",
+   "title": "Attacks Using Shared-Dictionary Compression"
+  },
+  {
+   "num": "17.7",
+   "title": "Disclosure of Personal Information"
+  },
+  {
+   "num": "17.8",
+   "title": "Privacy of Server Log Information"
+  },
+  {
+   "num": "17.9",
+   "title": "Disclosure of Sensitive Information in URIs"
+  },
+  {
+   "num": "17.10",
+   "title": "Application Handling of Field Names"
+  },
+  {
+   "num": "17.11",
+   "title": "Disclosure of Fragment after Redirects"
+  },
+  {
+   "num": "17.12",
+   "title": "Disclosure of Product Information"
+  },
+  {
+   "num": "17.13",
+   "title": "Browser Fingerprinting"
+  },
+  {
+   "num": "17.14",
+   "title": "Validator Retention"
+  },
+  {
+   "num": "17.15",
+   "title": "Denial-of-Service Attacks Using Range"
+  },
+  {
+   "num": "17.16",
+   "title": "Authentication Considerations"
+  },
+  {
+   "num": "17.16.1",
+   "title": "Confidentiality of Credentials"
+  },
+  {
+   "num": "17.16.2",
+   "title": "Credentials and Idle Clients"
+  },
+  {
+   "num": "17.16.3",
+   "title": "Protection Spaces"
+  },
+  {
+   "num": "17.16.4",
+   "title": "Additional Response Fields"
+  },
+  {
+   "num": "18",
+   "title": "IANA Considerations"
+  },
+  {
+   "num": "18.1",
+   "title": "URI Scheme Registration"
+  },
+  {
+   "num": "18.2",
+   "title": "Method Registration"
+  },
+  {
+   "num": "18.3",
+   "title": "Status Code Registration"
+  },
+  {
+   "num": "18.4",
+   "title": "Field Name Registration"
+  },
+  {
+   "num": "18.5",
+   "title": "Authentication Scheme Registration"
+  },
+  {
+   "num": "18.6",
+   "title": "Content Coding Registration"
+  },
+  {
+   "num": "18.7",
+   "title": "Range Unit Registration"
+  },
+  {
+   "num": "18.8",
+   "title": "Media Type Registration"
+  },
+  {
+   "num": "18.9",
+   "title": "Port Registration"
+  },
+  {
+   "num": "18.10",
+   "title": "Upgrade Token Registration"
+  },
+  {
+   "num": "19",
+   "title": "References"
+  },
+  {
+   "num": "19.1",
+   "title": "Normative References"
+  },
+  {
+   "num": "19.2",
+   "title": "Informative References"
+  }
+ ],
+ "appendices": [
+  {
+   "num": "A",
+   "title": "Collected ABNF"
+  },
+  {
+   "num": "B",
+   "title": "Changes from Previous RFCs"
+  }
+ ]
+}

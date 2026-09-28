@@ -1,0 +1,857 @@
+{
+ "thinkpython2": {
+  "sections": [
+   {
+    "num": "1",
+    "title": "The way of the program"
+   },
+   {
+    "num": "1.1",
+    "title": "What is a program?"
+   },
+   {
+    "num": "1.2",
+    "title": "Running Python"
+   },
+   {
+    "num": "1.3",
+    "title": "The ﬁrst program"
+   },
+   {
+    "num": "1.4",
+    "title": "Arithmetic operators"
+   },
+   {
+    "num": "1.5",
+    "title": "Values and types"
+   },
+   {
+    "num": "1.6",
+    "title": "Formal and natural languages"
+   },
+   {
+    "num": "1.7",
+    "title": "Debugging"
+   },
+   {
+    "num": "1.8",
+    "title": "Glossary"
+   },
+   {
+    "num": "1.9",
+    "title": "Exercises"
+   },
+   {
+    "num": "2",
+    "title": "Variables, expressions and statements"
+   },
+   {
+    "num": "2.1",
+    "title": "Assignment statements"
+   },
+   {
+    "num": "2.2",
+    "title": "Variable names"
+   },
+   {
+    "num": "2.3",
+    "title": "Expressions and statements"
+   },
+   {
+    "num": "2.4",
+    "title": "Script mode"
+   },
+   {
+    "num": "2.5",
+    "title": "Order of operations"
+   },
+   {
+    "num": "2.6",
+    "title": "String operations"
+   },
+   {
+    "num": "2.7",
+    "title": "Comments"
+   },
+   {
+    "num": "2.8",
+    "title": "Debugging"
+   },
+   {
+    "num": "2.9",
+    "title": "Glossary"
+   },
+   {
+    "num": "2.10",
+    "title": "Exercises"
+   },
+   {
+    "num": "3",
+    "title": "Functions"
+   },
+   {
+    "num": "3.1",
+    "title": "Function calls"
+   },
+   {
+    "num": "3.2",
+    "title": "Math functions"
+   },
+   {
+    "num": "3.3",
+    "title": "Composition"
+   },
+   {
+    "num": "3.4",
+    "title": "Adding new functions"
+   },
+   {
+    "num": "3.5",
+    "title": "Deﬁnitions and uses"
+   },
+   {
+    "num": "3.6",
+    "title": "Flow of execution"
+   },
+   {
+    "num": "3.7",
+    "title": "Parameters and arguments"
+   },
+   {
+    "num": "3.8",
+    "title": "Variables and parameters are local"
+   },
+   {
+    "num": "3.9",
+    "title": "Stack diagrams"
+   },
+   {
+    "num": "3.10",
+    "title": "Fruitful functions and void functions"
+   },
+   {
+    "num": "3.11",
+    "title": "Why functions?"
+   },
+   {
+    "num": "3.12",
+    "title": "Debugging"
+   },
+   {
+    "num": "3.13",
+    "title": "Glossary"
+   },
+   {
+    "num": "3.14",
+    "title": "Exercises"
+   },
+   {
+    "num": "4",
+    "title": "Case study: interface design"
+   },
+   {
+    "num": "4.1",
+    "title": "The turtle module"
+   },
+   {
+    "num": "4.2",
+    "title": "Simple repetition"
+   },
+   {
+    "num": "4.3",
+    "title": "Exercises"
+   },
+   {
+    "num": "4.4",
+    "title": "Encapsulation"
+   },
+   {
+    "num": "4.5",
+    "title": "Generalization"
+   },
+   {
+    "num": "4.6",
+    "title": "Interface design"
+   },
+   {
+    "num": "4.7",
+    "title": "Refactoring"
+   },
+   {
+    "num": "4.8",
+    "title": "A development plan"
+   },
+   {
+    "num": "4.9",
+    "title": "docstring"
+   },
+   {
+    "num": "4.10",
+    "title": "Debugging"
+   },
+   {
+    "num": "4.11",
+    "title": "Glossary"
+   },
+   {
+    "num": "4.12",
+    "title": "Exercises"
+   },
+   {
+    "num": "5",
+    "title": "Conditionals and recursion"
+   },
+   {
+    "num": "5.1",
+    "title": "Floor division and modulus"
+   },
+   {
+    "num": "5.2",
+    "title": "Boolean expressions"
+   },
+   {
+    "num": "5.3",
+    "title": "Logical operators"
+   },
+   {
+    "num": "5.4",
+    "title": "Conditional execution"
+   },
+   {
+    "num": "5.5",
+    "title": "Alternative execution"
+   },
+   {
+    "num": "5.6",
+    "title": "Chained conditionals"
+   },
+   {
+    "num": "5.7",
+    "title": "Nested conditionals"
+   },
+   {
+    "num": "5.8",
+    "title": "Recursion"
+   },
+   {
+    "num": "5.9",
+    "title": "Stack diagrams for recursive functions"
+   },
+   {
+    "num": "5.10",
+    "title": "Inﬁnite recursion"
+   },
+   {
+    "num": "5.11",
+    "title": "Keyboard input"
+   },
+   {
+    "num": "5.12",
+    "title": "Debugging"
+   },
+   {
+    "num": "5.13",
+    "title": "Glossary"
+   },
+   {
+    "num": "5.14",
+    "title": "Exercises"
+   },
+   {
+    "num": "6",
+    "title": "Fruitful functions"
+   },
+   {
+    "num": "6.1",
+    "title": "Return values"
+   },
+   {
+    "num": "6.2",
+    "title": "Incremental development"
+   },
+   {
+    "num": "6.3",
+    "title": "Composition"
+   },
+   {
+    "num": "6.4",
+    "title": "Boolean functions"
+   },
+   {
+    "num": "6.5",
+    "title": "More recursion"
+   },
+   {
+    "num": "6.6",
+    "title": "Leap of faith"
+   },
+   {
+    "num": "6.7",
+    "title": "One more example"
+   },
+   {
+    "num": "6.8",
+    "title": "Checking types"
+   },
+   {
+    "num": "6.9",
+    "title": "Debugging"
+   },
+   {
+    "num": "6.10",
+    "title": "Glossary"
+   },
+   {
+    "num": "6.11",
+    "title": "Exercises"
+   },
+   {
+    "num": "7",
+    "title": "Iteration"
+   },
+   {
+    "num": "7.1",
+    "title": "Reassignment"
+   },
+   {
+    "num": "7.2",
+    "title": "Updating variables"
+   },
+   {
+    "num": "7.3",
+    "title": "The while statement"
+   },
+   {
+    "num": "7.4",
+    "title": "break"
+   },
+   {
+    "num": "7.5",
+    "title": "Square roots"
+   },
+   {
+    "num": "7.6",
+    "title": "Algorithms"
+   },
+   {
+    "num": "7.7",
+    "title": "Debugging"
+   },
+   {
+    "num": "7.8",
+    "title": "Glossary"
+   },
+   {
+    "num": "7.9",
+    "title": "Exercises"
+   },
+   {
+    "num": "8",
+    "title": "Strings"
+   },
+   {
+    "num": "8.1",
+    "title": "A string is a sequence"
+   },
+   {
+    "num": "8.2",
+    "title": "len"
+   },
+   {
+    "num": "8.3",
+    "title": "Traversal with a for loop"
+   },
+   {
+    "num": "8.4",
+    "title": "String slices"
+   },
+   {
+    "num": "8.5",
+    "title": "Strings are immutable"
+   },
+   {
+    "num": "8.6",
+    "title": "Searching"
+   },
+   {
+    "num": "8.7",
+    "title": "Looping and counting"
+   },
+   {
+    "num": "8.8",
+    "title": "String methods"
+   },
+   {
+    "num": "8.9",
+    "title": "The in operator"
+   },
+   {
+    "num": "8.10",
+    "title": "String comparison"
+   },
+   {
+    "num": "8.11",
+    "title": "Debugging"
+   },
+   {
+    "num": "8.12",
+    "title": "Glossary"
+   },
+   {
+    "num": "8.13",
+    "title": "Exercises"
+   },
+   {
+    "num": "9",
+    "title": "Case study: word play"
+   },
+   {
+    "num": "9.1",
+    "title": "Reading word lists"
+   },
+   {
+    "num": "9.2",
+    "title": "Exercises"
+   },
+   {
+    "num": "9.3",
+    "title": "Search"
+   },
+   {
+    "num": "9.4",
+    "title": "Looping with indices"
+   },
+   {
+    "num": "9.5",
+    "title": "Debugging"
+   },
+   {
+    "num": "9.6",
+    "title": "Glossary"
+   },
+   {
+    "num": "9.7",
+    "title": "Exercises"
+   },
+   {
+    "num": "10.1",
+    "title": "A list is a sequence"
+   },
+   {
+    "num": "10.2",
+    "title": "Lists are mutable"
+   },
+   {
+    "num": "10.3",
+    "title": "Traversing a list"
+   },
+   {
+    "num": "10.4",
+    "title": "List operations"
+   },
+   {
+    "num": "10.5",
+    "title": "List slices"
+   },
+   {
+    "num": "10.6",
+    "title": "List methods"
+   },
+   {
+    "num": "10.7",
+    "title": "Map, ﬁlter and reduce"
+   },
+   {
+    "num": "10.8",
+    "title": "Deleting elements"
+   },
+   {
+    "num": "10.9",
+    "title": "Lists and strings"
+   },
+   {
+    "num": "11.1",
+    "title": "A dictionary is a mapping"
+   },
+   {
+    "num": "11.2",
+    "title": "Dictionary as a collection of counters"
+   },
+   {
+    "num": "11.3",
+    "title": "Looping and dictionaries"
+   },
+   {
+    "num": "11.4",
+    "title": "Reverse lookup"
+   },
+   {
+    "num": "11.5",
+    "title": "Dictionaries and lists"
+   },
+   {
+    "num": "11.6",
+    "title": "Memos"
+   },
+   {
+    "num": "11.7",
+    "title": "Global variables"
+   },
+   {
+    "num": "11.8",
+    "title": "Debugging"
+   },
+   {
+    "num": "11.9",
+    "title": "Glossary"
+   }
+  ]
+ },
+ "scotus": {
+  "markers": [
+   {
+    "page": 9,
+    "text": "I",
+    "writing": "opinion",
+    "level": 1
+   },
+   {
+    "page": 10,
+    "text": "A",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 12,
+    "text": "B",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 13,
+    "text": "C",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 15,
+    "text": "II",
+    "writing": "opinion",
+    "level": 1
+   },
+   {
+    "page": 15,
+    "text": "A",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 17,
+    "text": "B",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 21,
+    "text": "C",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 26,
+    "text": "III",
+    "writing": "opinion",
+    "level": 1
+   },
+   {
+    "page": 26,
+    "text": "A",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 29,
+    "text": "B",
+    "writing": "opinion",
+    "level": 2
+   },
+   {
+    "page": 29,
+    "text": "1",
+    "writing": "opinion",
+    "level": 3
+   },
+   {
+    "page": 31,
+    "text": "2",
+    "writing": "opinion",
+    "level": 3
+   },
+   {
+    "page": 34,
+    "text": "3",
+    "writing": "opinion",
+    "level": 3
+   },
+   {
+    "page": 37,
+    "text": "IV",
+    "writing": "opinion",
+    "level": 1
+   },
+   {
+    "page": 49,
+    "text": "I",
+    "writing": "concurrence-gorsuch",
+    "level": 1
+   },
+   {
+    "page": 49,
+    "text": "A",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 52,
+    "text": "B",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 55,
+    "text": "C",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 59,
+    "text": "II",
+    "writing": "concurrence-gorsuch",
+    "level": 1
+   },
+   {
+    "page": 59,
+    "text": "A",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 61,
+    "text": "B",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 62,
+    "text": "1",
+    "writing": "concurrence-gorsuch",
+    "level": 3
+   },
+   {
+    "page": 64,
+    "text": "2",
+    "writing": "concurrence-gorsuch",
+    "level": 3
+   },
+   {
+    "page": 68,
+    "text": "3",
+    "writing": "concurrence-gorsuch",
+    "level": 3
+   },
+   {
+    "page": 73,
+    "text": "C",
+    "writing": "concurrence-gorsuch",
+    "level": 2
+   },
+   {
+    "page": 78,
+    "text": "III",
+    "writing": "concurrence-gorsuch",
+    "level": 1
+   },
+   {
+    "page": 85,
+    "text": "I",
+    "writing": "dissent",
+    "level": 1
+   },
+   {
+    "page": 96,
+    "text": "II",
+    "writing": "dissent",
+    "level": 1
+   },
+   {
+    "page": 105,
+    "text": "III",
+    "writing": "dissent",
+    "level": 1
+   },
+   {
+    "page": 112,
+    "text": "IV",
+    "writing": "dissent",
+    "level": 1
+   }
+  ],
+  "source": "Cornell LII HTML (centered heading elements per writing); page numbers from the PDF geometry, which matched the LII sequence 1:1"
+ },
+ "bert": {
+  "sections": [
+   {
+    "num": "1",
+    "title": "Introduction"
+   },
+   {
+    "num": "2",
+    "title": "Related Work"
+   },
+   {
+    "num": "2.1",
+    "title": "Unsupervised Feature-based Approaches"
+   },
+   {
+    "num": "2.2",
+    "title": "Unsupervised Fine-tuning Approaches"
+   },
+   {
+    "num": "2.3",
+    "title": "Transfer Learning from Supervised Data"
+   },
+   {
+    "num": "3",
+    "title": "BERT"
+   },
+   {
+    "num": "3.1",
+    "title": "Pre-training BERT"
+   },
+   {
+    "num": "3.2",
+    "title": "Fine-tuning BERT"
+   },
+   {
+    "num": "4",
+    "title": "Experiments"
+   },
+   {
+    "num": "4.1",
+    "title": "GLUE"
+   },
+   {
+    "num": "4.2",
+    "title": "SQuAD v1.1"
+   },
+   {
+    "num": "4.3",
+    "title": "SQuAD v2.0"
+   },
+   {
+    "num": "4.4",
+    "title": "SWAG"
+   },
+   {
+    "num": "5",
+    "title": "Ablation Studies"
+   },
+   {
+    "num": "5.1",
+    "title": "Effect of Pre-training Tasks"
+   },
+   {
+    "num": "5.2",
+    "title": "Effect of Model Size"
+   },
+   {
+    "num": "5.3",
+    "title": "Feature-based Approach with BERT"
+   },
+   {
+    "num": "6",
+    "title": "Conclusion"
+   },
+   {
+    "num": "A",
+    "title": "Additional Details for BERT"
+   },
+   {
+    "num": "A.1",
+    "title": "Illustration of the Pre-training Tasks"
+   },
+   {
+    "num": "A.2",
+    "title": "Pre-training Procedure"
+   },
+   {
+    "num": "A.3",
+    "title": "Fine-tuning Procedure"
+   },
+   {
+    "num": "A.4",
+    "title": "Comparison of BERT, ELMo ,and"
+   },
+   {
+    "num": "A.5",
+    "title": "Illustrations of Fine-tuning on Different"
+   },
+   {
+    "num": "B",
+    "title": "Detailed Experimental Setup"
+   },
+   {
+    "num": "B.1",
+    "title": "Detailed Descriptions for the GLUE"
+   },
+   {
+    "num": "C",
+    "title": "Additional Ablation Studies"
+   },
+   {
+    "num": "C.1",
+    "title": "Effect of Number of Training Steps"
+   },
+   {
+    "num": "C.2",
+    "title": "Ablation for Different Masking"
+   }
+  ]
+ },
+ "nist-cyber": {
+  "sections": [
+   {
+    "num": "1",
+    "title": "Cybersecurity Framework (CSF) Overview"
+   },
+   {
+    "num": "2",
+    "title": "Introduction to the CSF Core"
+   },
+   {
+    "num": "3",
+    "title": "Introduction to CSF Profiles and Tiers"
+   },
+   {
+    "num": "4",
+    "title": "Introduction to Online Resources That Supplement the CSF"
+   },
+   {
+    "num": "5",
+    "title": "Improving Cybersecurity Risk Communication and Integration"
+   },
+   {
+    "num": "Appendix A",
+    "title": "CSF Core"
+   },
+   {
+    "num": "Appendix B",
+    "title": "CSF Tiers"
+   },
+   {
+    "num": "Appendix C",
+    "title": "Glossary"
+   }
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+pdfs/
+.venv/
+out/*.markitdown.md
+out/*.pymupdf4llm.md
+out/*.time
+__pycache__/
